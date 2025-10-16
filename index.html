@@ -12,6 +12,7 @@
   </header>
 
   <main>
+    <!-- FILTER & SEARCH -->
     <section class="filter">
       <input type="text" id="searchInput" placeholder="Cari resep..." />
       <select id="categoryFilter">
@@ -25,13 +26,16 @@
       <button id="resetButton">Hapus Semua Resep</button>
     </section>
 
+    <!-- DAFTAR RESEP -->
     <section id="recipeList" class="recipe-list"></section>
 
+    <!-- TAMBAH RESEP BARU -->
     <section class="add-recipe">
       <h2>Tambah Resep Baru</h2>
       <form id="addRecipeForm">
         <input type="text" id="recipeTitle" placeholder="Judul Resep" required />
         <input type="text" id="recipeCategory" placeholder="Kategori (misal: sarapan)" required />
+        <input type="text" id="recipeImage" placeholder="URL Gambar (opsional)" />
         <textarea id="recipeIngredients" placeholder="Bahan-bahan" required></textarea>
         <textarea id="recipeSteps" placeholder="Langkah-langkah" required></textarea>
         <button type="submit">Tambah Resep</button>
@@ -39,9 +43,11 @@
     </section>
   </main>
 
+  <!-- MODAL DETAIL RESEP -->
   <div id="recipeModal" class="modal hidden">
     <div class="modal-content">
       <span id="closeModal" class="close">&times;</span>
+      <img id="modalImage" src="" alt="Gambar Resep" class="modal-img" />
       <h2 id="modalTitle"></h2>
       <p><strong>Kategori:</strong> <span id="modalCategory"></span></p>
       <h3>Bahan-bahan:</h3>
@@ -52,7 +58,7 @@
   </div>
 
   <footer>
-    <p>© 2025 Resep Makanan Umum | Dibuat dengan ❤️ </p>
+    <p>© 2025 Resep Makanan Umum | Dibuat dengan ❤️</p>
   </footer>
 
   <script src="script.js"></script>
