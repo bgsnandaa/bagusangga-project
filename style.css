@@ -11,6 +11,10 @@ body {
   color: #333;
   line-height: 1.6;
   background-image: url("makanan.jpg");
+  background-size: cover;        
+  background-position: center;  
+  background-repeat: no-repeat;  
+  background-attachment: fixed; 
 }
 
 /* ======== HEADER ======== */
