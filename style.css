@@ -7,15 +7,18 @@
 }
 
 body {
-  background-color: #f9f9f9;
-  color: #333;
-  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  height: 100vh; 
   background-image: url("makanan.jpg");
   background-size: cover;        
-  background-position: center;  
+  background-position: center;   
   background-repeat: no-repeat;  
   background-attachment: fixed; 
+  color: #333;
+  line-height: 1.6;
 }
+
 
 /* ======== HEADER ======== */
 header {
