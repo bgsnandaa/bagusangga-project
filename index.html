@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resep Makanan Umum</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🍽️ Resep Makanan Umum</h1>
+  </header>
+
+  <main>
+    <section class="filter">
+      <input type="text" id="searchInput" placeholder="Cari resep..." />
+      <select id="categoryFilter">
+        <option value="semua">Semua Kategori</option>
+        <option value="sarapan">Sarapan</option>
+        <option value="makan siang">Makan Siang</option>
+        <option value="makan malam">Makan Malam</option>
+        <option value="camilan">Camilan</option>
+        <option value="penutup">Penutup</option>
+      </select>
+      <button id="resetButton">Hapus Semua Resep</button>
+    </section>
+
+    <section id="recipeList" class="recipe-list"></section>
+
+    <section class="add-recipe">
+      <h2>Tambah Resep Baru</h2>
+      <form id="addRecipeForm">
+        <input type="text" id="recipeTitle" placeholder="Judul Resep" required />
+        <input type="text" id="recipeCategory" placeholder="Kategori (misal: sarapan)" required />
+        <textarea id="recipeIngredients" placeholder="Bahan-bahan" required></textarea>
+        <textarea id="recipeSteps" placeholder="Langkah-langkah" required></textarea>
+        <button type="submit">Tambah Resep</button>
+      </form>
+    </section>
+  </main>
+
+  <div id="recipeModal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p><strong>Kategori:</strong> <span id="modalCategory"></span></p>
+      <h3>Bahan-bahan:</h3>
+      <p id="modalIngredients"></p>
+      <h3>Langkah-langkah:</h3>
+      <p id="modalSteps"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Resep Makanan Umum | Dibuat dengan ❤️ oleh Novi</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
